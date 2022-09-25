@@ -1,8 +1,10 @@
 # wetherspoons 
 
+<img align="right" width="260" height="300" src="https://github.com/dougaltoms/wetherspoons/blob/master/figures/logo.png">
+
 It's a hot summer's day and you're sipping on your 2-for-£12 pitchers from your local spoons (<https://www.jdwetherspoon.com/> for you uncultured swines). 'Wow, what a pretty cocktail I'm drinking', you think to yourself. 'If only I could use these colours on my next coursework assignment'. Well fear not...
 
-This package provides palettes inspired by the cocktails of JD Wetherspoon. With thanks to [`MetBrewer`](https://github.com/BlakeRMills/MetBrewer/) for inspiration on package structure.
+This package provides palettes inspired by the cocktails of JD Wetherspoon. With thanks to [`MetBrewer`](https://github.com/BlakeRMills/MetBrewer/) for inspiration on package structure and formatting.
 
 Feel free to contact me with comments or suggestions: <br />
 LinkedIn: [@dougal-toms](https://www.linkedin.com/in/dougal-toms/)<br />
@@ -39,20 +41,20 @@ wetherspoons::pitcher.of("BlueLagoon")
 ```{r, message=FALSE}
 library(ggplot2)
 
-ggplot(iris, aes(x = Petal.Length, fill = Species)) +
-  geom_density(alpha = 0.8)+
+ggplot(iris, aes(x=Petal.Length, fill=Species)) +
+  geom_density(alpha=0.8)+
   scale_fill_manual(values=pitcher.of("BlueLagoon",3))+
   labs(x="Petal length", y="Density",
        title="How petal length varies across Iris species",
        subtitle="Coloured using wetherspoons")+
   theme_minimal()
 ```
-![](https://github.com/dougaltoms/wetherspoons/blob/master/figures/README_ggplot1.png)
+<img width="583" height="433" src="https://github.com/dougaltoms/wetherspoons/blob/master/figures/README_ggplot1.png">
 
 ```{r, message=FALSE}
 library(ggplot2)
 
-ggplot(data=iris, aes(x=Sepal.Length, y=Sepal.Width, color=Species)) +
+ggplot(iris, aes(x=Sepal.Length, y=Sepal.Width, color=Species)) +
   geom_point(size=2) +
   scale_color_manual(values=pitcher.of("SexOnTheBeach",3))+
   labs(x="Length", y="Width",
@@ -61,12 +63,12 @@ ggplot(data=iris, aes(x=Sepal.Length, y=Sepal.Width, color=Species)) +
   theme_minimal()
 ```
 
-![](https://github.com/dougaltoms/wetherspoons/blob/master/figures/README_ggplot2.png)
+<img width="583" height="433" src="https://github.com/dougaltoms/wetherspoons/blob/master/figures/README_ggplot2.png">
 
 ```{r, message=FALSE}
 library(ggplot2)
 
-ggplot(data=iris, aes(x=Species, y=Petal.Length, fill=Species)) +
+ggplot(iris, aes(x=Species, y=Petal.Length, fill=Species)) +
   geom_violin() +
   scale_fill_manual(values=pitcher.of("PurpleRain",n=3, direction=1))+
   labs(title="Petal length by Iris Species", y="Petal length",
@@ -74,4 +76,4 @@ ggplot(data=iris, aes(x=Species, y=Petal.Length, fill=Species)) +
   theme_minimal()
 ```
 
-![](https://github.com/dougaltoms/wetherspoons/blob/master/figures/README_ggplot3.png)
+<img width="583" height="433" src="https://github.com/dougaltoms/wetherspoons/blob/master/figures/README_ggplot3.png">
