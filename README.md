@@ -1,9 +1,4 @@
----
-output:
-  html_document:
----
-
-# wetherspoons
+# wetherspoons 
 
 It's a hot summer's day and you're sipping on your 2-for-£12 pitchers from your local spoons (<https://www.jdwetherspoon.com/> for you uncultured swines). 'Wow, what a pretty cocktail I'm drinking', you think to yourself. 'If only I could use these colours on my next coursework assignment'. Well fear not...
 
@@ -30,6 +25,7 @@ library(wetherspoons)
 
 wetherspoons::WhatsOnTheMenu()
 ```
+![](https://github.com/dougaltoms/wetherspoons/blob/master/figures/README_WhatsOnTheMenu.png)
 
 Once you've chosen your cocktail, you can generate colour values by ordering a pitcher of, using the `pitcher.of()` function:
 
@@ -51,6 +47,7 @@ ggplot(iris, aes(x = Petal.Length, fill = Species)) +
        subtitle="Coloured using wetherspoons")+
   theme_minimal()
 ```
+![](https://github.com/dougaltoms/wetherspoons/blob/master/figures/README_ggplot1.png)
 
 ```{r, message=FALSE}
 library(ggplot2)
@@ -64,6 +61,8 @@ ggplot(data=iris, aes(x=Sepal.Length, y=Sepal.Width, color=Species)) +
   theme_minimal()
 ```
 
+![](https://github.com/dougaltoms/wetherspoons/blob/master/figures/README_ggplot2.png)
+
 ```{r, message=FALSE}
 library(ggplot2)
 
@@ -74,3 +73,5 @@ ggplot(data=iris, aes(x=Species, y=Petal.Length, fill=Species)) +
        subtitle="Coloured using wetherspoons")+
   theme_minimal()
 ```
+
+![](https://github.com/dougaltoms/wetherspoons/blob/master/figures/README_ggplot3.png)
