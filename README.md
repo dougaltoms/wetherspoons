@@ -52,7 +52,26 @@ wetherspoons::pitcher.of("BlueLagoon")
 
 ## Examples
 
-`wetherspoon` provides relevant scales for use with `ggplot2`
+### Rayshader
+
+Plotting 2D hillshaded maps using [`rayshader`](https://www.rayshader.com/) and `wetherspoons`
+
+``` r
+library(rayshader)
+
+palette <- wetherspoons::pitcher.of("TuttiFrutti", n=250, direction=1)
+
+montereybay %>%
+    height_shade(texture=palette) %>%
+    add_overlay(sphere_shade(montereybay, zscale=4), alphalayer=.5) %>%
+    plot_map()
+```
+
+![](https://github.com/dougaltoms/wetherspoons/blob/master/figures/rayshader.png)<!-- -->
+
+### ggplot2
+
+`wetherspoon` provides relevant scales for use with `ggplot2`. The following examples use the commonly used `iris` data set.
 
 ``` r
 library(ggplot2)
