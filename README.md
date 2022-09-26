@@ -3,6 +3,8 @@
 
 # wetherspoons
 
+<img align="right" width=324 height=376 src = "https://github.com/dougaltoms/wetherspoons/blob/master/figures/logo.png" >
+
 It’s a hot summer’s day and you’re sipping on your 2-for-£12 pitchers
 from your local spoons (<https://www.jdwetherspoon.com/> for you
 uncultured swines). ‘Wow, what a pretty cocktail I’m drinking’, you
@@ -37,7 +39,7 @@ library(wetherspoons)
 wetherspoons::WhatsOnTheMenu()
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
+![](https://github.com/dougaltoms/wetherspoons/blob/master/figures/README_WhatsOnTheMenu.png)<!-- -->
 
 Once you’ve chosen your cocktail, you can generate colour values by
 ordering a pitcher of, using the `pitcher.of()` function:
