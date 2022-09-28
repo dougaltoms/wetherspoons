@@ -49,7 +49,6 @@ WhatsOnTheMenu <- function(){
   }
 }
 
-WhatsOnTheMenu()
 
 #' pitcher.of
 #'
