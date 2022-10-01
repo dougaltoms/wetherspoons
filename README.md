@@ -71,7 +71,7 @@ montereybay %>%
 
 ### ggplot2
 
-`wetherspoon` provides relevant scales for use with `ggplot2`. The following examples use the commonly used `iris` data set.
+`wetherspoons` provides relevant scales for use with `ggplot2`. The following examples use the commonly used `iris` data set.
 
 ``` r
 library(ggplot2)
