@@ -4,9 +4,9 @@
 
 WetherspoonPalettes <- list(
   BlueLagoon <- c("#164d83","#2a81ca","#3ca2e1","#55cce3","#80bcae","#f2e554"),
-  SexOnTheBeach <- c("#fbd85e","#f5a941","#f1803a","#fc6a03","#e33530","#721613"),
+  SexOnTheBeach <- c("#721613","#e33530","#fc6a03","#f1803a","#f5a941","#fbd85e"),
   PurpleRain <-  c("#2a0925","#412a52","#727aa0","#b9c8d4","#cacaca","#a3b535"),
-  PornstarMartini <- c("#812b18","#b15928","#bd742e","#d2a039","#e1c843","#43833b"),
+  PornstarMartini <- c("#face60","#f2903d","#d46b31","#ece2d9","#d0c65c","#995176"),
   TuttiFrutti <- c("#1f4c1d","#479624","#7cc033","#9ed23b","#d7f578","#fefaa9"),
   BubbleGin <- c("#b02f24","#984c50","#c2868f","#ccaead","#d5d0d4","#f5eaf3")
 )
@@ -49,6 +49,7 @@ WhatsOnTheMenu <- function(){
   }
 }
 
+WhatsOnTheMenu()
 
 #' pitcher.of
 #'
