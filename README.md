@@ -23,9 +23,16 @@ Feel free to contact me with comments or suggestions: <br /> LinkedIn:
 
 `wetherspoons` can be installed through GitHub
 
+### R
+
 ``` r
 install.packages("devtools")
 devtools::install_github("dougaltoms/wetherspoons")
+```
+### Python
+
+```
+pip install git+https://github.com/dougaltoms/wetherspoons.git
 ```
 
 ## Palettes
@@ -113,3 +120,23 @@ ggplot(data=iris, aes(x=Species, y=Petal.Length, fill=Species)) +
 ```
 
 ![](README_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
+
+### matplotlib
+
+```
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Create wetherspoons cmap
+cmap = wetherspoons.pitcher_of("BlueLagoon", direction=1, type="continuous")
+
+# Create data
+X, Y = np.meshgrid(np.linspace(-3, 3, 16), np.linspace(-3, 3, 16))
+Z = (1 - X/2 + X**5 + Y**3) * np.exp(-X**2 - Y**2)
+
+# Plot
+fig, ax = plt.subplots()
+ax.imshow(Z, cmap=cmap)
+
+plt.show()
+```
