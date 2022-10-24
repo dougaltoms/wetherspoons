@@ -123,6 +123,8 @@ ggplot(data=iris, aes(x=Species, y=Petal.Length, fill=Species)) +
 
 ### matplotlib
 
+`wetherspoons` provides `matplotlib` functionality with the ability to create custom cmaps
+
 ```
 import matplotlib.pyplot as plt
 import numpy as np
@@ -140,3 +142,5 @@ ax.imshow(Z, cmap=cmap)
 
 plt.show()
 ```
+
+![](https://github.com/dougaltoms/wetherspoons/blob/master/figures/README_matplotlib.png)<!-- -->
