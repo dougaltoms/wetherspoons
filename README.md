@@ -125,7 +125,7 @@ ggplot(data=iris, aes(x=Species, y=Petal.Length, fill=Species)) +
 
 `wetherspoons` provides `matplotlib` functionality with the ability to create custom cmaps
 
-```
+``` python
 import matplotlib.pyplot as plt
 import numpy as np
 
