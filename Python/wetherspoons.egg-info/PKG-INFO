@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: wetherspoons
+Version: 0.0.1
+Summary: Colormaps inspired by the cocktails of JD Wetherspoon
+Home-page: https://github.com/dougaltoms/wetherspoons
+Author: Dougal Toms
+Author-email: dougal.toms@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
