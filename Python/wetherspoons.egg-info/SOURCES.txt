@@ -1,8 +1,0 @@
-setup.py
-wetherspoons/PaletteCode.py
-wetherspoons/__init__.py
-wetherspoons.egg-info/PKG-INFO
-wetherspoons.egg-info/SOURCES.txt
-wetherspoons.egg-info/dependency_links.txt
-wetherspoons.egg-info/requires.txt
-wetherspoons.egg-info/top_level.txt
